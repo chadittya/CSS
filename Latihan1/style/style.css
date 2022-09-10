@@ -1,0 +1,112 @@
+/* untuk element */
+h1{
+    color: deepskyblue;
+    /* kalau lebih dari satu website akan mencari font yang pertama duluan, jika tidak ada nexnya */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    /* font-weight: bold; untuk berat font*/
+    font-variant: small-caps;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 30px;
+    /* color:lightgray; */
+    /* text-transform: capitalize; untuk membuat awal text huruf capital  */
+
+}
+
+body{
+    background-image: url(../img/denim.webp);
+}
+
+/* untuk id */
+#p1{
+    color: lightsteelblue;
+}
+
+/* untuk class */
+.p2{
+    color: lightcoral;
+}
+
+/* jika memiliki 2 class */
+.miring-doang{
+    font-style: italic;
+}
+
+p.miring-doang{
+    font-weight: bold;
+}
+
+/* pseudo class class yang active dalam keadaan tertentu */
+/* warna link */
+.hello:link{
+    color: azure;
+}
+
+/* warna link */
+.hello:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    color: blanchedalmond;
+    font-size: large;
+}
+
+/* clicked */
+.hello:active{
+    font-style: italic;
+}
+
+/* visited */
+.hello:visited{
+    color:lightcyan;
+}
+
+/* pseudo parent */
+li:first-child a {
+    color: greenyellow;
+}
+
+li:last-child a{
+    color: lightsalmon;
+}
+
+li:nth-child(5) a{
+    color: lightseagreen;
+}
+
+/* untuk pola (gunakan even untuk genap dan odd untuk ganjil) */
+li:nth-child(3n+1) a{
+    color: lightgreen;
+}
+
+li:nth-child(odd) a:hover{
+    font-size: large;
+    color: lightcoral;
+}
+
+p:first-of-type{
+    color: lightpink;
+}
+
+p:last-of-type{
+    color: lightgreen;
+}
+
+/* specificity (berat css) untuk menentukan prioritas pengaturan
+inline, id, class, element = 0 0 0 0
+example:
+
+saya punya ul yang ingin saya warnai hijau namun salah satu li-nya ingin warna yang berbeda
+ul#sarapan li = 0102
+.favorit = 0010
+
+selector diatas warnanya tidak akan berubah karena beratnya li-nya kalah,
+untuk bisa mengatasinya kita harus membuat selector lebih spesific / menambah berat selectornya
+menjadi:
+
+ul#sarapan li = 0102
+ul#sarapan li.favorit = 0112 */
