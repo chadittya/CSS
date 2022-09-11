@@ -1,0 +1,34 @@
+.satu{
+    width: 300px;
+    height: 300px;
+    background-color: coral;
+    margin: 20px auto;
+    padding-left: 20px;
+    padding-top: 20px;
+    /* padding: 20px 10px 30px 40px; untu shorthand, sama dengan margin, mengikuti arah jarum jam. bedanya tidak bisa dikasih value minus dan auto*/
+    overflow: hidden; /* untuk menghilangkan content yang melebihi batas margin */
+    /* !!!! note : jika menggunakan padding akan mempengaruhi ukuran box */
+    border: 5px solid black; /*shorthand untuk width style color*/
+    /* border-left: 5px solid black; untuk salah satu border dalam kasus ini untuk kiri saja */
+    /* !!! note: padding juga mempengaruhi ukuran box */
+}
+/* gunakan box-sizing agar saat otak atik border atau padding tidak mempengaruhi ukuran box */
+div{
+    width: 600px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.dua{
+    background-color: blue;
+    padding: 10px;
+    border: 5px solid yellow;
+}
+
+.tiga{
+    background-color: blueviolet;
+    padding: 30px;
+    border: 10px dashed yellowgreen;
+}
+
+/* css reset untuk kendali penuh css bisa bisa di copas di meyerweb*/

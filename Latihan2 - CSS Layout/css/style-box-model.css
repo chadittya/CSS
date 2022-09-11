@@ -1,0 +1,56 @@
+.satu{
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    margin-right: 50px;
+}
+
+.dua{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin-top: -160px;
+}
+
+.tiga{
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+    display: inline-block;
+}
+
+.empat{
+    width: 150px;
+    height: 150px;
+    background-color: yellowgreen;
+    display: inline-block;
+}
+
+.lima{
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* shorhand */
+.enam{
+    width: 150px;
+    height: 150px;
+    background-color:plum;
+    /* 4 sisi
+    margin: 50px; */
+
+    /* atas&bawah kiri&kanan
+    margin: 50px 100px; */
+
+    /* atas kiri&kanan bawah
+    margin: 50px 100px 50px; */
+
+    /* atas kanan bawah kiri */
+    margin: 50px 100px 100px 50px;
+}
