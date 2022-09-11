@@ -1,0 +1,21 @@
+/* position digunakan untuk memindahkan posisi element tanpa mempengaruhi element lainnya */
+
+div{
+    width: 200px;
+    height: 200px;
+}
+
+.satu{
+    background-color: lightskyblue;
+}
+
+.dua{
+    background-color: limegreen;
+    position: relative; /*maju kedepan 1 dimensi */
+    top: 30px;
+    left: 30px;
+}
+
+.tiga{
+    background-color: salmon;
+}
