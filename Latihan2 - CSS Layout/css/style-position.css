@@ -1,8 +1,12 @@
 /* position digunakan untuk memindahkan posisi element tanpa mempengaruhi element lainnya */
+body{
+    height: 2000px;
+}
 
 div{
     width: 200px;
     height: 200px;
+    margin: auto;
 }
 
 .satu{
@@ -11,11 +15,28 @@ div{
 
 .dua{
     background-color: limegreen;
-    position: relative; /*maju kedepan 1 dimensi */
-    top: 30px;
-    left: 30px;
+    /* position: relative; /*maju kedepan 1 dimensi posisi tetap dari posisi awalnya (static)*/
+    /* top: 30px;
+    left: 30px; */
+    
+    /* position: absolute; /*maju 1 dimensi dan ruang sebelumnya dianggap tidak ada, posisinya mengikuti parent elementnya selama parent elementnya memiliki posisi non relatic*/
+    /* top: 0px;
+    left: 0px; */
+
+    position: fixed; /*element yang itidak bergerak walaupun di scroll*/
+    width: 100%;
+    height: 50px;
+    top: 0px;
+    left: 0px;
 }
 
 .tiga{
     background-color: salmon;
+}
+
+.container{
+    width: 600px;
+    height: 650px;
+    border: 10px solid green;
+    position: relative;
 }
