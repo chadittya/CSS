@@ -56,10 +56,48 @@ body{
     color:midnightblue;
 }
 
+.top-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: #333;
+    border-bottom: 3px solid salmon;
+    z-index: 1000;
+}
+
+#search {
+    position: absolute;
+    right: 105px;
+    top: 9px;
+    border: 3px solid #eaeaea;
+}
+
+.label-search{
+    position: absolute;
+    right: 290px;
+    top: 10px;
+    color: #eaeaea;
+}
+
 .container{
     width: 960px;
-    margin: auto;
+    margin: 80px auto;
     background-color: whitesmoke;
+    position: relative; /*agar dapat lock ribbon */
+}
+
+.twitter{
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/pngegg.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    top: -15px;
+    right: -111px;
 }
 
 .header{
